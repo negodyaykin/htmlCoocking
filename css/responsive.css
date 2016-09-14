@@ -5,6 +5,26 @@
   }
 }
 
+/* max-width 968px */
+@media screen and (max-width: 980px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  main,
+  asdie {
+    width: 100%;
+  }
+  
+  main {
+    padding-right: 0;
+  }
+  
+  .row-item {
+    max-width: 100%;
+  }
+}
+
 /* max-width 780px */
 @media screen and (max-width: 780px) {  
   .content-wrapper {
@@ -50,7 +70,7 @@
     width: 100%;
   }
   
-  .sidebar {
+  aside {
     width: 100%;
   }
 }
