@@ -1,76 +1,80 @@
 /* max-width 1024px */
+
 @media screen and (max-width: 1024px) {
   .tablet-hidden {
     display: none;
   }
 }
 
+
 /* max-width 968px */
+
 @media screen and (max-width: 980px) {
   .content {
     flex-direction: column;
   }
-  
-  main,
-  asdie {
+  .main,
+  .sidebar {
     width: 100%;
   }
-  
-  main {
+  .main {
     padding-right: 0;
   }
-  
   .row-item {
     max-width: 100%;
   }
+  .sign-up-wrapper {
+    height: 50px;
+  }
+  .sign-up-wrapper button,
+  .sign-up-wrapper input {
+    height: 100%;
+    font-size: 20px;
+  }
+  .tablet-hidden {
+    display: none;
+  }
 }
 
+
 /* max-width 780px */
-@media screen and (max-width: 780px) {  
+
+@media screen and (max-width: 780px) {
   .content-wrapper {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
   .header-nav .content-wrapper {
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
   }
-  
   /* header nav */
   .header-nav {
     flex-direction: column;
   }
-  
   .show-menu {
     display: block;
-    background-color:  #9e7ec1;
+    background-color: #9e7ec1;
   }
-  
   .nav-list {
     display: none;
     flex-direction: column;
   }
-  
   .nav-item {
     border-left: none;
     border-bottom: solid 1px rgba(215, 160, 229, 0.12);
   }
-  
   .nav-item:last-child {
     border-right: none;
   }
-  
   .content {
     flex-direction: column;
   }
-  
-  main {
+  .main {
     width: 100%;
   }
-  
-  aside {
+  .sidebar {
     width: 100%;
   }
 }

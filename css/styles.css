@@ -288,7 +288,7 @@ body {
   color: #fff;
 }
 
-.text-wrapper a {
+.global-link {
   color: #000;
   font-size: 14px;
   font-weight: bold; 
@@ -315,7 +315,7 @@ body {
   text-decoration: underline;
 }
 
-main {
+.main {
   width: calc(100% - 300px);
   display: flex;
   flex-direction: column;
@@ -323,17 +323,41 @@ main {
 }
 
 .apple-application {
-  align-items: flex-end;
-  
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #f6f6f6;
+  margin-top: 61px;
 }
+
+.apple-application-text {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+}
+
+.ipad-image-wrapper {
+  position: relative;
+  width: 97px;
+  height: 115px;
+  bottom: 10px;
+}
+
+.app-store-image-wrapper {
+  width: 120px;
+  height: 35px;
+  padding-left: 97px;
+}
+
 /* ================================= 
-              ASIDE
+              .sidebar
    =================================*/
-aside {
+.sidebar {
   width: 300px;
   padding-top: 88px;
   text-align: left;
-  
 } 
 
 .form-sign-up {
@@ -347,19 +371,19 @@ aside {
   padding-bottom: 14px;
 }
 
-.form-sign-up button,
-.form-sign-up input {
+.sign-up-wrapper button,
+.sign-up-wrapper input {
   display: block;
   float: left;
   height: 34px;
 }
 
-.form-sign-up input {
+.sign-up-wrapper input {
   width: 69%;
   padding: 12px;
 }
 
-.form-sign-up button {
+.sign-up-wrapper button {
   width: 31%;
   background-color: #9e7ec1;
   font-size: 11px;
@@ -369,38 +393,40 @@ aside {
   color: #fff;
   cursor: pointer;
 }
-.aside-content-wrapper {
+
+.sidebar-content-wrapper {
   padding: 0px 10px;
   background-color: #f6f6f6;
 }
-.aside-content-item {
+
+.sidebar-content-item {
   display: flex;
   align-items: flex-start;
   padding-bottom: 12px;
   padding-top: 12px;
-  border-bottom:   1px solid #e4e3e3;
+  border-bottom: 1px solid #e4e3e3;
 }
 
-.aside-content-item-image-wrapper {
+.sidebar-content-item-image-wrapper {
   float: left;
   padding: 1px;
   border: 1px solid #adadad;
 }
 
-.aside-content-item-text-wrapper {
+.sidebar-content-item-text-wrapper {
   padding-left: 12px;
   font-size: 15px;
 }
 
-.aside-content-item-image-wrapper img {
+.sidebar-content-item-image-wrapper img {
   max-width: 77px;
   height: 77px;
 }
 
-.aside-content-item-text-wrapper h2 {
+.sidebar-content-item-text-wrapper h2 {
   font-weight: bold;
 }
 
-.aside-content-item-text-wrapper p {
+.sidebar-content-item-text-wrapper p {
     line-height: 1.2;
 }
